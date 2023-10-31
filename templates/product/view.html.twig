@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>{{product.sku}}</title>
+
+		<style>
+			#main{
+				width: 100%;
+			}
+			.left-panel{
+				width: 30%;
+				float: left;
+			}
+			.right-panel{
+				width: 70%;
+				float: right;
+			}
+			.smalltext{
+				margin-top: -10px;
+				font-style: italic;
+				font-size: 9pt
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="main">
+			<div class="left-panel">
+				<img src={{product.image}} width="100%" alt='image' />
+			</div>
+			<div class="right-panel">
+				<h2>{{product.title}}</h2>
+				<p class="smalltext">{{ 'sku'|trans({}, 'messages', locale) }}: {{product.sku}}</p>
+				<p>
+					{{product.description|raw}}
+				</p>
+				<ul>
+					<li>{{'price'|trans({}, 'messages', locale) }}: {{product.price}}</li>
+					<li>{{'availableSize'|trans({}, 'messages', locale) }}: {{product.availableSize}}</li>
+					<li>{{'composition'|trans({}, 'messages', locale) }}: {{product.composition|raw}}</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

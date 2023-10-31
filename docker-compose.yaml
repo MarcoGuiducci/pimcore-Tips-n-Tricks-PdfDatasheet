@@ -93,6 +93,9 @@ services:
         volumes:
             - pimcore-test-var:/var/www/html/var
             - pimcore-test-public-var:/var/www/html/public/var
+    
+    chrome:
+        image: browserless/chrome
 
 volumes:
     pimcore-database:

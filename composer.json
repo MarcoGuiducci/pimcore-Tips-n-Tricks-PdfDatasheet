@@ -12,10 +12,12 @@
   },
   "prefer-stable": true,
   "require": {
-    "pimcore/pimcore": "^11.0.4",
+    "chrome-php/chrome": "^1.9",
     "pimcore/admin-ui-classic-bundle": "^1.0",
-    "symfony/runtime": "^6.2",
-    "symfony/dotenv": "^6.2"
+    "pimcore/pimcore": "^11.0.4",
+    "pimcore/web-to-print-bundle": "^1.0",
+    "symfony/dotenv": "^6.2",
+    "symfony/runtime": "^6.2"
   },
   "require-dev": {
     "codeception/codeception": "^5.0.3",

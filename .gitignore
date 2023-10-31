@@ -29,8 +29,7 @@
 /var/config/tag-manager.php
 /var/config/reports.php
 
-
-/public/var/
+/public/var/tmp/
 /public/sitemap*.xml
 
 # PHP-CS-Fixer
@@ -48,3 +47,4 @@ nbproject
 # temp
 .temp
 .github
+cache
